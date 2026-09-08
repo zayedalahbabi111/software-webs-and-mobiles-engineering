@@ -1,10 +1,10 @@
 # CampusPulse requirements
 
-Name or team:
+Name or team: Zayed Alahbabi
 
-Date:
+Date: 7 September 2026
 
-Status: working draft
+Status: validated baseline for first release
 
 Use the source IDs `S1` to `S6` from the lab handout. Keep every requirement
 short enough to test and trace.
@@ -13,31 +13,29 @@ short enough to test and trace.
 
 ### In scope
 
-List at least three capabilities that belong in the first release.
-
--
--
--
+- Browser-based access through university sign-in for a pilot of 5,000 students and 200 groups.
+- Verified-group profiles with official badges and approved-officer publishing permissions.
+- Shared drafts and publication of announcements and events for university-wide or members-only audiences.
+- Following groups, viewing a combined feed, RSVP with private-by-default visibility, and change or cancellation notifications.
+- Corrections, reporting, immediate moderation hiding, audit records, preserved appeal evidence, and appeals.
+- Controls for group impersonation and repeated announcements from compromised accounts.
 
 ### Out of scope
 
-List at least two explicit exclusions.
-
--
--
+- Native mobile applications and access by external users.
+- Direct messages and payments.
+- Video hosting and AI recommendations.
 
 ## 2. User requirements
 
-Write at least five customer-readable needs. Use one need per line and trace it
-to the stakeholder evidence.
-
-Format: `UR-1 [Must] ... [Source: S1]`
-
-- UR-1 [Must]
-- UR-2 [Must]
-- UR-3 [Must]
-- UR-4 [Must]
-- UR-5 [Must]
+- UR-1 [Must] Students need one mobile-friendly, accessible feed for events and announcements from groups they follow. [Source: S1]
+- UR-2 [Must] Students need their RSVP identity to remain private unless they explicitly choose public visibility. [Source: S1, S5]
+- UR-3 [Must] Approved group officers need to share drafts and publish announcements and events to university-wide or members-only audiences. [Source: S2]
+- UR-4 [Must] Students who RSVP need to be informed when an event's place or time changes or when the event is cancelled. [Source: S2]
+- UR-5 [Must] Campus moderators need reports containing the reported content and reason, with the ability to hide content while preserving evidence and decision accountability for appeals. [Source: S3]
+- UR-6 [Must] Students need an official badge to identify groups checked by Student Affairs. [Source: S4, S6]
+- UR-7 [Must] Student Affairs needs the browser service to support a pilot of 5,000 students and 200 groups before Orientation Week. [Source: S4]
+- UR-8 [Must] The Data Protection Officer needs only necessary personal data collected and cancelled-event attendance data deleted within 30 days. [Source: S5]
 
 ## 3. Functional requirements
 
