@@ -46,7 +46,7 @@ short enough to test and trace.
 - FR-5 [Must] The system shall permit publication only when the acting account is an approved officer of that group at publication time. [Source: UR-3]
 - FR-6 [Must] The system shall restrict members-only content to authenticated members of the publishing group. [Source: UR-3]
 - FR-7 [Must] The system shall record each event place, time or cancellation change and identify the officer who made it. [Source: UR-4]
-- FR-8 [Must] The system shall promptly notify every current RSVP holder when an event's place or time changes or when the event is cancelled. [Source: UR-4]
+- FR-8 [Must] The system shall notify every current RSVP holder of an event place, time or cancellation change within 5 minutes of the saved change. [Source: UR-4]
 - FR-9 [Must] The system shall create a report containing the reporter, reported content snapshot, reason and submission time. [Source: UR-5]
 - FR-10 [Must] The system shall allow an authorised moderator to hide reported content immediately without deleting the report or evidence snapshot. [Source: UR-5]
 - FR-11 [Must] The system shall record the moderator identity, decision, reason and timestamp for every hide, restore and appeal decision. [Source: UR-5]
@@ -89,7 +89,7 @@ Acceptance criteria:
 
 - Given officer A saves a draft, when approved officer B opens and publishes it to members only, then group members can view it and non-members receive no content.
 - Given an unapproved account attempts to publish the draft, when it submits the action, then publication is rejected and the draft remains unpublished.
-- Given an officer saves a changed event time, when the change is processed, then every current RSVP holder is promptly sent a notification identifying the event and changed time.
+- Given an officer saves a changed event time, when 5 minutes have elapsed, then every current RSVP holder has been sent a notification identifying the event and changed time.
 
 ### US-3 [Source: S3, UR-5]
 
@@ -157,6 +157,7 @@ Acceptance criteria:
 - A1: Until Orientation Week peak traffic is measured, performance testing will use 100 concurrent signed-in users, a 15-minute representative workload, a 2-second feed-response target, and a 95th-percentile pass threshold.
 - A2: A daily retention job may finish within 24 hours after an attendance record reaches its 30-day cancellation deadline.
 - A3: University sign-in supplies a stable university identifier and group membership data needed for access control without CampusPulse collecting separate credentials.
+- A4: Until group officers confirm an acceptable correction-notification delay, notifications will be tested against a five-minute delivery target.
 
 ### Open questions
 
