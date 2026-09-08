@@ -39,31 +39,28 @@ short enough to test and trace.
 
 ## 3. Functional requirements
 
-Write at least six observable system behaviours. Start each one with "The
-system shall" and trace it to one or more user requirements.
-
-Format: `FR-1 [Must] The system shall ... [Source: UR-1]`
-
-- FR-1 [Must] The system shall
-- FR-2 [Must] The system shall
-- FR-3 [Must] The system shall
-- FR-4 [Must] The system shall
-- FR-5 [Must] The system shall
-- FR-6 [Must] The system shall
+- FR-1 [Must] The system shall authenticate students and officers using university sign-in before granting access. [Source: UR-1, UR-3]
+- FR-2 [Must] The system shall display a chronological feed of events and announcements published by groups the signed-in student follows. [Source: UR-1]
+- FR-3 [Must] The system shall set each new RSVP identity to private and shall display it publicly only after the student explicitly opts in. [Source: UR-2]
+- FR-4 [Must] The system shall allow approved officers of the same group to create and edit a shared draft. [Source: UR-3]
+- FR-5 [Must] The system shall permit publication only when the acting account is an approved officer of that group at publication time. [Source: UR-3]
+- FR-6 [Must] The system shall restrict members-only content to authenticated members of the publishing group. [Source: UR-3]
+- FR-7 [Must] The system shall record each event place, time or cancellation change and identify the officer who made it. [Source: UR-4]
+- FR-8 [Must] The system shall notify every current RSVP holder of an event place, time or cancellation change within 5 minutes of the saved change. [Source: UR-4]
+- FR-9 [Must] The system shall create a report containing the reporter, reported content snapshot, reason and submission time. [Source: UR-5]
+- FR-10 [Must] The system shall allow an authorised moderator to hide reported content immediately without deleting the report or evidence snapshot. [Source: UR-5]
+- FR-11 [Must] The system shall record the moderator identity, decision, reason and timestamp for every hide, restore and appeal decision. [Source: UR-5]
+- FR-12 [Must] The system shall display an official badge only for a group whose verification status is approved by Student Affairs. [Source: UR-6]
+- FR-13 [Must] The system shall permanently delete attendance records linked to a cancelled event no later than 30 days after cancellation. [Source: UR-8]
 
 ## 4. Non-functional requirements
 
-Write at least four measurable quality requirements. State what is measured,
-the target, and the condition under which the target applies. If you introduce
-a number that is not in the handout, record it as an assumption or open
-question in Section 8.
-
-Format: `NFR-1 [Must] The system shall ... [Measure: target and condition] [Source: UR-1]`
-
-- NFR-1 [Must] The system shall
-- NFR-2 [Must] The system shall
-- NFR-3 [Should] The system shall
-- NFR-4 [Must] The system shall
+- NFR-1 [Must] The system shall expose labels, names, roles and states that meet WCAG 2.2 Level AA success criteria on every student and officer journey. [Measure: zero Level A or AA failures in automated checks plus keyboard and screen-reader review of each release candidate] [Source: UR-1]
+- NFR-2 [Must] The responsive browser interface shall render without horizontal page scrolling at viewport widths from 320 to 1440 CSS pixels at 200% zoom, except for content that intrinsically requires two-dimensional layout. [Measure: pass at every tested width on the supported-browser matrix] [Source: UR-1]
+- NFR-3 [Must] The system shall support 5,000 registered student accounts and 200 registered group accounts without data loss. [Measure: successful load test using a dataset of at least 5,000 students and 200 groups] [Source: UR-7]
+- NFR-4 [Must] The system shall complete at least 95% of feed requests within 2 seconds under 100 concurrent signed-in users. [Measure: server response time measured over a 15-minute representative load test; target and concurrency are assumption A1 pending Orientation Week traffic evidence] [Source: UR-1, UR-7]
+- NFR-5 [Must] The system shall prevent an unauthorised account from publishing, viewing members-only content, or changing verification status in 100% of the permission test suite. [Measure: all positive and negative authorisation cases pass before release] [Source: UR-3, UR-6]
+- NFR-6 [Must] The system shall complete the scheduled deletion of due cancelled-event attendance records within 24 hours after their 30-day deadline. [Measure: zero overdue attendance records in a daily retention audit; scheduling tolerance is assumption A2] [Source: UR-8]
 
 ## 5. User stories and acceptance criteria
 
