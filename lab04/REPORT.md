@@ -112,7 +112,7 @@ Observed result and why it agrees with the contract: direct HTTP checks showed t
 
 ## Submission
 
-- Final implementation commit (`Complete lab04 playlist`): recorded by GitHub after the final commit is created.
+- Final implementation commit (`Complete lab04 playlist`): `d47c84ec2c2430e25949cfb805a9b63f1dcb5857`.
 - Files included and review notes: `lab04/backend.py`, `lab04/index.html`, `lab04/REPORT.md`, `lab04/README.md`, and `lab04/.gitignore`.
-- Push and GitHub verification: files are written directly to the repository `main` branch through the connected GitHub account; final verification is performed after the commit.
+- Push and GitHub verification: the implementation commit was pushed to the repository `main` branch and the required `lab04` files were verified on GitHub.
 - Optional stretch, if attempted: not attempted.
