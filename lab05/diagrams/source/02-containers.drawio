@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="02-containers" name="02 | Containers - Campus Workshop Board">
+    <mxGraphModel dx="1900" dy="1370" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1900" pageHeight="1370" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" value="02 | Containers - Campus Workshop Board" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#16324f;strokeColor=#506176;fontColor=white;fontFamily=Arial;fontSize=30;align=center;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="25" width="1830" height="65" />
+        </mxCell>
+        <mxCell id="c2" value="Expands: Campus Workshop Board (01-context). Proposed technologies; external API contracts are design assumptions." style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=21;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="103" width="1810" height="52" />
+        </mxCell>
+        <mxCell id="c3" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;dashed=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="450" y="250" width="950" height="830" />
+        </mxCell>
+        <mxCell id="c4" value="CAMPUS WORKSHOP BOARD [Software system boundary]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="465" y="258" width="920" height="40" />
+        </mxCell>
+        <mxCell id="c5" value="University Student&#10;[Person using a browser]&#10;HTML forms over HTTPS;&#10;no separate browser app." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e4f4ed;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="55" y="420" width="320" height="210" />
+        </mxCell>
+        <mxCell id="c6" value="Board Web App&#10;[Container: Node.js + TypeScript + Express]&#10;Server-rendered HTML; authentication and owner checks;&#10;workshop creation, publishing, reads and reservations;&#10;one process with internal components;&#10;requests confirmation only after committing a new seat." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=24;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="340" width="740" height="265" />
+        </mxCell>
+        <mxCell id="c7" value="Board Database&#10;[Container: PostgreSQL on persistent storage]&#10;Stores workshops, ownership and reservations.&#10;Transactions, row locks and unique constraints.&#10;Authoritative state survives application/database restart." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e4f4ed;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=24;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="835" width="740" height="200" />
+        </mxCell>
+        <mxCell id="c8" value="Campus Identity&#10;[External software system]&#10;Credential verification;&#10;student ID, name, email." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f0f2f5;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1495" y="295" width="345" height="190" />
+        </mxCell>
+        <mxCell id="c9" value="University Mail&#10;[External software system]&#10;Confirmation request;&#10;accepted or unavailable." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f0f2f5;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1495" y="775" width="345" height="190" />
+        </mxCell>
+        <mxCell id="c10" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.42857142857142855;exitPerimeter=0;entryX=0.0;entryY=0.6415094339622641;entryPerimeter=0;" edge="1" parent="1" source="c5" target="c6">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="375" y="510" />
+            <mxPoint as="targetPoint" x="550" y="510" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c11" value="HTTPS:&#10;forms + cookie;&#10;HTML results" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="380" y="385" width="165" height="100" />
+        </mxCell>
+        <mxCell id="c12" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.22641509433962265;exitPerimeter=0;entryX=0.0;entryY=0.5526315789473685;entryPerimeter=0;" edge="1" parent="1" source="c6" target="c8">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1290" y="400" />
+            <mxPoint as="targetPoint" x="1495" y="400" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c13" value="HTTPS / JSON:&#10;credential;&#10;verified profile" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1295" y="265" width="195" height="100" />
+        </mxCell>
+        <mxCell id="c14" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.8301886792452831;exitPerimeter=0;entryX=0.0;entryY=0.4473684210526316;entryPerimeter=0;" edge="1" parent="1" source="c6" target="c9">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1290" y="560" />
+            <mxPoint as="targetPoint" x="1495" y="860" />
+            <Array as="points">
+              <mxPoint x="1440" y="560" />
+              <mxPoint x="1440" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" value="HTTPS / JSON:&#10;recipient, title/time,&#10;reservation ID;&#10;accepted / unavailable" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1460" y="575" width="380" height="125" />
+        </mxCell>
+        <mxCell id="c16" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="c6" target="c7">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="920" y="605" />
+            <mxPoint as="targetPoint" x="920" y="835" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" value="PostgreSQL wire protocol / TCP (TLS in deployment):&#10;parameterized SQL, transactions, locks; stored rows / commit result" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="485" y="680" width="870" height="95" />
+        </mxCell>
+        <mxCell id="c18" value="Session: signed, expiring HttpOnly cookie containing the verified profile; Identity Gate checks signature and expiry on every board request.&#10;Durable domain data lives in Board Database, not process memory; refresh performs a new stored-state query. [R1, R5]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff2dd;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="1120" width="1760" height="100" />
+        </mxCell>
+        <mxCell id="c19" value="Legend: blue = application container; green = person or data-store container (type shown); grey = external system.&#10;Dashed outline = system boundary; arrows = requests/dependencies, with response data included in the label. HTTPS = encrypted HTTP." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f0f2f5;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="1250" width="1830" height="90" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="05-dynamic" name="05 | Dynamic - Ari reserves the final seat; mail is unavailable">
+    <mxGraphModel dx="2200" dy="3260" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="2200" pageHeight="3260" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" value="05 | Dynamic - Ari reserves the final seat; mail is unavailable" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#16324f;strokeColor=#506176;fontColor=white;fontFamily=Arial;fontSize=30;align=center;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="25" width="2130" height="65" />
+        </mxCell>
+        <mxCell id="c2" value="One continuous numbered runtime story using the components in 03-components. Read panels A, B, C, D from top to bottom." style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=21;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="103" width="2110" height="52" />
+        </mxCell>
+        <mxCell id="c3" value="PRECONDITION: W17 &quot;Build a tiny game&quot;; owner S10; published; capacity 3; reservations {S21, S22}.&#10;Ari = S23, ari@example.invalid; signed-in cookie is valid; no S23 reservation. Storage works; nobody else acts.&#10;R-W17-S23 below denotes the newly generated reservation ID; t = its creation timestamp." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff2dd;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=23;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="175" width="2110" height="125" />
+        </mxCell>
+        <mxCell id="c4" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;dashed=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="350" width="2110" height="530" />
+        </mxCell>
+        <mxCell id="c5" value="A | Authenticate and enter Reservation Rules (in-process calls except HTTPS)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="358" width="2080" height="40" />
+        </mxCell>
+        <mxCell id="c6" value="Ari&#10;[Person / browser]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e4f4ed;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="52.0" y="410" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c7" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="180.0" y="510" />
+            <mxPoint as="targetPoint" x="180.0" y="855" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c8" value="Web Routes&#10;[Component]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="662.0" y="410" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c9" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="790.0" y="510" />
+            <mxPoint as="targetPoint" x="790.0" y="855" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c10" value="Identity Gate&#10;[Component]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1272.0" y="410" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c11" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1400.0" y="510" />
+            <mxPoint as="targetPoint" x="1400.0" y="855" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c12" value="Reservation Rules&#10;[Component]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1882.0" y="410" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c13" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2010.0" y="510" />
+            <mxPoint as="targetPoint" x="2010.0" y="855" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c14" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="180.0" y="585" />
+            <mxPoint as="targetPoint" x="790.0" y="585" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" value="1. POST /workshops/W17/reservations + cookie" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="195.0" y="528" width="580.0" height="50" />
+        </mxCell>
+        <mxCell id="c16" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="790.0" y="660" />
+            <mxPoint as="targetPoint" x="1400.0" y="660" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" value="2. require(cookie) [TypeScript call]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="805.0" y="603" width="580.0" height="50" />
+        </mxCell>
+        <mxCell id="c18" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1400.0" y="735" />
+            <mxPoint as="targetPoint" x="790.0" y="735" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" value="3. VerifiedStudent(S23, Ari, ari@example.invalid)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="805.0" y="678" width="580.0" height="50" />
+        </mxCell>
+        <mxCell id="c20" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="790.0" y="820" />
+            <mxPoint as="targetPoint" x="2010.0" y="820" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" value="4. reserve(VerifiedStudent, W17) [TypeScript call]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="805.0" y="763" width="1190.0" height="50" />
+        </mxCell>
+        <mxCell id="c22" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;dashed=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="930" width="2110" height="1000" />
+        </mxCell>
+        <mxCell id="c23" value="B | Decide and persist under one workshop lock (Reservation Rules, Workshop Store, Board Database)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="938" width="2080" height="40" />
+        </mxCell>
+        <mxCell id="c24" value="Reservation Rules&#10;[Component]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="52.0" y="990" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c25" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="180.0" y="1090" />
+            <mxPoint as="targetPoint" x="180.0" y="1905" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c26" value="Workshop Store&#10;[Component]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="967.0" y="990" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c27" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="1090" />
+            <mxPoint as="targetPoint" x="1095.0" y="1905" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c28" value="Board Database&#10;[PostgreSQL container]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e4f4ed;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1882.0" y="990" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c29" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2010.0" y="1090" />
+            <mxPoint as="targetPoint" x="2010.0" y="1905" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c30" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="180.0" y="1155" />
+            <mxPoint as="targetPoint" x="1095.0" y="1155" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c31" value="5. withLockedWorkshop(W17, callback) [TypeScript call]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="195.0" y="1098" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c32" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="1230" />
+            <mxPoint as="targetPoint" x="2010.0" y="1230" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c33" value="6. BEGIN READ COMMITTED; SELECT W17 FOR UPDATE [SQL/TCP]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="1173" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c34" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2010.0" y="1305" />
+            <mxPoint as="targetPoint" x="1095.0" y="1305" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c35" value="7. locked row: owner=S10, published=true, capacity=3" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="1248" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c36" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="1380" />
+            <mxPoint as="targetPoint" x="2010.0" y="1380" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c37" value="8. SELECT reservation WHERE workshop=W17 AND student=S23" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="1323" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c38" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2010.0" y="1455" />
+            <mxPoint as="targetPoint" x="1095.0" y="1455" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c39" value="9. no existing reservation for (W17, S23)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="1398" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c40" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="1530" />
+            <mxPoint as="targetPoint" x="2010.0" y="1530" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c41" value="10. SELECT COUNT(*) for W17 (later SQL statement)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="1473" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c42" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2010.0" y="1605" />
+            <mxPoint as="targetPoint" x="1095.0" y="1605" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c43" value="11. count=2; Rules callback uses this result to check 2 &lt; 3" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="1548" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c44" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="1680" />
+            <mxPoint as="targetPoint" x="2010.0" y="1680" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c45" value="12. INSERT (R-W17-S23, W17, S23, Ari, ari@example.invalid, t)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="1623" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c46" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="1755" />
+            <mxPoint as="targetPoint" x="2010.0" y="1755" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c47" value="13. COMMIT; release workshop lock" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="1698" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c48" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2010.0" y="1830" />
+            <mxPoint as="targetPoint" x="1095.0" y="1830" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c49" value="14. COMMIT acknowledged; lock released (seat is durable)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="1773" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c50" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="1900" />
+            <mxPoint as="targetPoint" x="180.0" y="1900" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c51" value="15. Created(saved reservation, workshop W17) [callback result]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="195.0" y="1843" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c52" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;dashed=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="1980" width="2110" height="470" />
+        </mxCell>
+        <mxCell id="c53" value="C | Request confirmation once after commit; report success even though mail fails" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1988" width="2080" height="40" />
+        </mxCell>
+        <mxCell id="c54" value="Reservation Rules&#10;[Component]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="52.0" y="2040" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c55" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="180.0" y="2140" />
+            <mxPoint as="targetPoint" x="180.0" y="2425" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c56" value="Confirmation&#10;[Component]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="967.0" y="2040" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c57" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="2140" />
+            <mxPoint as="targetPoint" x="1095.0" y="2425" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c58" value="University Mail&#10;[External system]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f0f2f5;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1882.0" y="2040" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c59" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2010.0" y="2140" />
+            <mxPoint as="targetPoint" x="2010.0" y="2425" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c60" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="180.0" y="2200" />
+            <mxPoint as="targetPoint" x="1095.0" y="2200" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c61" value="16. requestOnce(R-W17-S23, workshop W17) [TypeScript call]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="195.0" y="2143" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c62" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="2275" />
+            <mxPoint as="targetPoint" x="2010.0" y="2275" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c63" value="17. HTTPS/JSON: ari@example.invalid, title/start, R-W17-S23" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="2218" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c64" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2010.0" y="2350" />
+            <mxPoint as="targetPoint" x="1095.0" y="2350" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c65" value="18. Unavailable (service error / connection failure / timeout)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="2293" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c66" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="2420" />
+            <mxPoint as="targetPoint" x="180.0" y="2420" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c67" value="19. Unavailable; no retry and no database change" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="195.0" y="2363" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c68" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;dashed=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="2490" width="2110" height="410" />
+        </mxCell>
+        <mxCell id="c69" value="D | Return the saved reservation and render Ari's success message" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="2498" width="2080" height="40" />
+        </mxCell>
+        <mxCell id="c70" value="Reservation Rules&#10;[Component]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="52.0" y="2550" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c71" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="180.0" y="2650" />
+            <mxPoint as="targetPoint" x="180.0" y="2875" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c72" value="Web Routes&#10;[Component]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="967.0" y="2550" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c73" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="2650" />
+            <mxPoint as="targetPoint" x="1095.0" y="2875" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c74" value="Ari&#10;[Person / browser]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e4f4ed;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=19;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1882.0" y="2550" width="256" height="100" />
+        </mxCell>
+        <mxCell id="c75" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=none;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2010.0" y="2650" />
+            <mxPoint as="targetPoint" x="2010.0" y="2875" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c76" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="180.0" y="2710" />
+            <mxPoint as="targetPoint" x="1095.0" y="2710" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c77" value="20. New {reservation: R-W17-S23, email: Unavailable}" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="195.0" y="2653" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c78" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1095.0" y="2800" />
+            <mxPoint as="targetPoint" x="2010.0" y="2800" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c79" value="21. HTTP 201 + HTML: reservation saved; email unavailable" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110.0" y="2743" width="885.0" height="50" />
+        </mxCell>
+        <mxCell id="c80" value="ARI SEES: Your place in &quot;Build a tiny game&quot; is reserved. Confirmation email is unavailable. Your reservation is still saved.&#10;AFTER: reservations {S21, S22, S23}; W17 unchanged; 0 remaining. A refresh via Board Queries returns the stored S23 seat.&#10;A repeat Reserve returns Existing(R-W17-S23), unchanged, even though full; no additional email request.&#10;University Mail failure changes neither the saved seat nor the success result; no automatic retries." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e4f4ed;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=23;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="2940" width="2110" height="170" />
+        </mxCell>
+        <mxCell id="c81" value="Legend: each header names a participant and its static type; blue = Board Web App component; green = person/database; grey = external system.&#10;Solid arrow = numbered call; dashed arrow = numbered result or vertical lifeline; panels continue one trace. Store SQL calls run for the Rules callback." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f0f2f5;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="3150" width="2130" height="90" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

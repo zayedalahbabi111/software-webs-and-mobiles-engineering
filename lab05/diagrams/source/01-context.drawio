@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="01-context" name="01 | System context - Campus Workshop Board">
+    <mxGraphModel dx="1800" dy="1130" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1130" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" value="01 | System context - Campus Workshop Board" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#16324f;strokeColor=#506176;fontColor=white;fontFamily=Arial;fontSize=30;align=center;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="25" width="1730" height="65" />
+        </mxCell>
+        <mxCell id="c2" value="Scope: the whole software system. Pilot: 200 university students; one small development team." style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=21;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="103" width="1710" height="52" />
+        </mxCell>
+        <mxCell id="c3" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;dashed=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="590" y="250" width="620" height="470" />
+        </mxCell>
+        <mxCell id="c4" value="TEAM RESPONSIBILITY" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="605" y="258" width="590" height="40" />
+        </mxCell>
+        <mxCell id="c5" value="Campus Workshop Board&#10;[Software system]&#10;Student-led workshop website&#10;Browse, create and publish workshops;&#10;reserve seats and view own bookings;&#10;owners view their attendees." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8f1fc;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=24;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="640" y="345" width="520" height="255" />
+        </mxCell>
+        <mxCell id="c6" value="University Student&#10;[Person]&#10;Browse and reserve;&#10;create a workshop as its owner.&#10;Organiser = student owner." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e4f4ed;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="360" width="370" height="220" />
+        </mxCell>
+        <mxCell id="c7" value="Campus Identity&#10;[External software system]&#10;Verifies university credentials;&#10;supplies student ID, name, email." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f0f2f5;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1370" y="260" width="370" height="185" />
+        </mxCell>
+        <mxCell id="c8" value="University Mail&#10;[External software system]&#10;Accepts confirmation requests&#10;and delivers student email." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f0f2f5;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1370" y="650" width="370" height="185" />
+        </mxCell>
+        <mxCell id="c9" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.49019607843137253;entryPerimeter=0;" edge="1" parent="1" source="c6" target="c5">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="435" y="470" />
+            <mxPoint as="targetPoint" x="640" y="470" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c10" value="Browse / manage&#10;workshop details;&#10;reserve a place" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="442" y="354" width="190" height="100" />
+        </mxCell>
+        <mxCell id="c11" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.17647058823529413;exitPerimeter=0;entryX=0.0;entryY=0.5135135135135135;entryPerimeter=0;" edge="1" parent="1" source="c5" target="c7">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1160" y="390" />
+            <mxPoint as="targetPoint" x="1370" y="355" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c12" value="Verify credential;&#10;receive identity&#10;or rejection" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1177" y="235" width="182" height="100" />
+        </mxCell>
+        <mxCell id="c13" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;exitX=1.0;exitY=0.803921568627451;exitPerimeter=0;entryX=0.0;entryY=0.43243243243243246;entryPerimeter=0;" edge="1" parent="1" source="c5" target="c8">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1160" y="550" />
+            <mxPoint as="targetPoint" x="1370" y="730" />
+            <Array as="points">
+              <mxPoint x="1270" y="550" />
+              <mxPoint x="1270" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c14" value="Request confirmation:&#10;recipient + workshop&#10;+ reservation details" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1050" y="744" width="305" height="100" />
+        </mxCell>
+        <mxCell id="c15" style="edgeStyle=none;rounded=0;html=0;strokeColor=#506176;strokeWidth=2;endArrow=block;endFill=1;exitX=0.2972972972972973;exitY=1.0;exitPerimeter=0;entryX=0.47297297297297297;entryY=1.0;entryPerimeter=0;" edge="1" parent="1" source="c8" target="c6">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1480" y="835" />
+            <mxPoint as="targetPoint" x="240" y="580" />
+            <Array as="points">
+              <mxPoint x="1480" y="930" />
+              <mxPoint x="240" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c16" value="Deliver confirmation email when available" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=white;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="520" y="896" width="650" height="60" />
+        </mxCell>
+        <mxCell id="c17" value="Only signed-in students access board features. [R1]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff2dd;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=22;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="605" y="640" width="590" height="65" />
+        </mxCell>
+        <mxCell id="c18" value="Legend: green = person; blue = system owned by the team; grey = external system.&#10;Dashed outline = responsibility boundary; arrow = interaction (label includes exchanged information)." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f0f2f5;strokeColor=#506176;fontColor=#172b42;fontFamily=Arial;fontSize=20;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="1005" width="1730" height="90" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
