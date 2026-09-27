@@ -1,6 +1,6 @@
 # Lab 04 report
 
-Student name: zayedalahbabi111 (GitHub username; replace with your official course name if required)
+Student name: Zayed Alahbabi
 
 Date: 2026-09-15
 
