@@ -1,6 +1,6 @@
 # Campus Workshop Board - Design notes
 
-Name: zayedalahbabi111 (GitHub username; official name not supplied)
+Name: Zayed Alahbabi
 Student ID: Not supplied
 
 ## Diagram files
