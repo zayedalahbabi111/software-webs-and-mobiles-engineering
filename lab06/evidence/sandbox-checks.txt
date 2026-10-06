@@ -1,0 +1,9 @@
+Codex version: REPLACE WITH THE EXACT OUTPUT OF codex --version FROM YOUR LAB MAC
+Tester reads AGENTS.md and REQUIREMENTS.md: NOT RUN LOCALLY YET
+Tester writes tests/check.txt: NOT RUN LOCALLY YET
+Tester cannot read fees.py or README.md: NOT RUN LOCALLY YET
+Tester cannot change fees.py: NOT RUN LOCALLY YET
+Tester cannot reach example.com: NOT RUN LOCALLY YET
+Reviewer reads AGENTS.md and fees.py: NOT RUN LOCALLY YET
+Reviewer cannot read tests/check.txt: NOT RUN LOCALLY YET
+Reviewer cannot change fees.py: NOT RUN LOCALLY YET
